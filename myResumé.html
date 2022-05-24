@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
@@ -9,14 +8,18 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-      <header class="row flex-column align-items-center">
-        <img src="images/M Louw.jpg" alt="Martin Louw Profile Picture" class="rounded-circle border border-warning">
-        <h1 class="display-4">Martin Louw</h1>
-            <p>I finished my matric in 2013 at Centurion High School, after which I was accepted in 2014 at the University of Pretoria to study towards a Bachelor of Commerce: Financial Science.  At the end of my second year, I realized that my passion was not Accounting.  I changed my study field to Bachelor of Commerce: Informatics.  I took a gap year in 2019 to become a better and more engaged student and obtained my Bachelor of Commerce: Informatics qualification in November 2020, the graduation ceremony took place in May 2021.</p>
-            <p>I am able to work independently, or as part of a team.  I am a hard worker and take responsibility for the tasks assigned to me.</p>
-        </p>
-      </header>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-3 text-center headingImage">
+          <img src="images/M Louw.jpg" alt="Martin Louw Profile Picture" class="rounded-circle border border-warning">       
+        </div>
+        <div class="col-lg-8 pt-5 headingText">     
+          <h1 class="display-4"><span>Martin Louw</span></h1>
+            <p class="lead"><span>I finished my matric in 2013 at Centurion High School, after which I was accepted in 2014 at the University of Pretoria to study towards a Bachelor of Commerce: Financial Science.  At the end of my second year, I realized that my passion was not Accounting.  I changed my study field to Bachelor of Commerce: Informatics.  I took a gap year in 2019 to become a better and more engaged student and obtained my Bachelor of Commerce: Informatics qualification in November 2020, the graduation ceremony took place in May 2021.</span></p>
+            <p><span>I am able to work independently, or as part of a team.  I am a hard worker and take responsibility for the tasks assigned to me.</span></p>
+          </p>  
+        </div>      
+      </div>
     </div>
 
     <script 
@@ -37,12 +40,8 @@
 
     <div class="card">
       <div class="row no-gutters">
-
-        <div class="col-md-2 bg-secondary pl-3 pt-3">
+        <div class="col-md-2 bg-secondary pl-3 pt-3 sidebarWidth">
           <h2 id="navigation">Navigation</h2>
-
-
-
             <div class="sidebar" id="navbarContent">
               <ul class="list-unstyled ml-3">
                 <li class="nav-item active"><a class="nav-link" href="#carouselInfo" data-slide-to="0" role="button">Education</a></li>
@@ -54,25 +53,11 @@
               </ul>
             </div>
           </nav>
-
-
         </div>
-<!--
-        <div class="col-md-2 bg-secondary pl-3 pt-3">
-          <h2 id="navigation">Navigation</h2>
-                <ul class="list-unstyled ml-3">
-                  <li><a href="#carouselInfo" data-slide-to="0" role="button">Education</a></li>
-                  <li><a href="#carouselInfo" data-slide-to="1" role="button">Experience</a></li>
-                  <li><a href="#carouselInfo" data-slide-to="2" role="button">Skills</a></li>
-                  <li><a href="#carouselInfo" data-slide-to="3" role="button">Interests</a></li>
-                  <li><a href="#carouselInfo" data-slide-to="4" role="button">Send Me an Email</a></li>
-                  <li><a href="#contactInfo">Contact Information</a></li>
-                </ul>
-        </div>
-      -->
-        <div class="col-md-10">
+
+        <div class="col-md-10 carouselCSS">
           <div class="card-body">
-            <div id="carouselInfo" class="carousel bg-light" data-ride="carousel" style="height: 450px;">
+            <div id="carouselInfo" class="carousel bg-light" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselEducation" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExperience" data-slide-to="1"></li>
@@ -101,7 +86,7 @@
                         Bachelor of Commerce: Informatics<br>
                         University of Pretoria<br>
                         2020
-                      </small></p>
+                      </small></p>                     
                 </div>
         
                 <div class="carousel-item">
@@ -137,7 +122,7 @@
                   <h2 class="card-title" id="sendAnEMail">Send Me an Email</h2>
                     <form>
                       <div>
-                        <p class="card-text ml-5">
+                        <p class="form-group ml-5">
                           <label for="userFullName">Name and Surname</label>
                             <input type="text" id="userFullName" name="user_Full_Name" required minlength="1"
                             oninvalid="this.setCustomValidity('Required.  Please enter your full name and surname')"
