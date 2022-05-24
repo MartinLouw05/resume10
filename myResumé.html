@@ -8,10 +8,10 @@
   </head>
 
   <body>
-    <div class="jumbotron">
+    <div class="jumbotron" id="#pageHeader">
       <div class="row">
         <div class="col-lg-3 text-center headingImage">
-          <img src="images/M Louw.jpg" alt="Martin Louw Profile Picture" class="rounded-circle border border-warning">       
+          <img src="images/M Louw.jpg" alt="Martin Louw Profile Picture" class="myImage">       
         </div>
         <div class="col-lg-8 pt-5 headingText">     
           <h1 class="display-4"><span>Martin Louw</span></h1>
@@ -23,8 +23,7 @@
     </div>
 
     <script 
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
       crossorigin="anonymous">
     </script>
     <script 
@@ -38,7 +37,7 @@
       crossorigin="anonymous">
     </script>
 
-    <div class="card">
+    <div class="card" id="pageNavigation">
       <div class="row no-gutters">
         <div class="col-md-2 bg-secondary pl-3 pt-3 sidebarWidth">
           <h2 id="navigation">Navigation</h2>
@@ -144,19 +143,33 @@
         </div>
       </div>
     </div>
-
-
   </body>
 
-  <footer class="container-fluid">
+  <footer class="container-fluid" id="pageFooter">
     <div class="row align-items-center flex-column mt-lg-2">
       <h2 id="contactInfo">Contact Information</h2>        
         <p>          
-          <a href="https://www.linkedin.com/in/martin-louw-5a29471b4"><img src="images/LinkedIn.png" alt="LinkedIn" class="socials"></a>
-          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" class="socials"></a>
-          <a href="http://mail.google.com/"><img src="images/gmailIcon.png" alt="Gmail" class="socials"></a>
+          <a href="https://www.linkedin.com/in/martin-louw-5a29471b4">
+            <picture>
+              <source media="(max-width: 992px)" srcset="images/LinkedIn.png">
+              <img src="images/linkedInLarge.png" alt="LinkedIn" class="socialsLarge">
+            </picture>
+          </a>
+          <a href="https://www.facebook.com/">
+            <picture>
+              <source media="(max-width: 992px)" srcset="images/facebook.png">
+              <img src="images/facebookLarge.png" alt="Facebook" class="socialsLarge">
+            </picture>
+          </a>
+          <a href="http://mail.google.com/">
+            <picture>
+              <source media="(max-width: 992px)" srcset="images/gmailIcon.png">
+              <img src="images/gmailLarge.png" alt="Facebook" class="socialsLarge">
+            </picture>
+          </a>
         </p>
     </div>
   </footer>
 </html>
+
 
